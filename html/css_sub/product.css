@@ -1,0 +1,250 @@
+/*全体に適用*/
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+  }
+.font{
+    font-family: 'Anton', sans-serif;
+}
+.font-jap{
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+img{
+    width: 380px;
+}
+.h2-title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*ナビゲーション*/
+nav{
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+nav ul{
+    background-color: #000;
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 3%;
+    max-height: 15%;
+    transition: all 1.4s;
+}
+
+nav.sticky .logo {
+    margin: 20px 0;
+}
+
+nav.sticky ul {
+    background: transparent;
+    font-size: 1.1rem;
+}
+.logo-rec{
+    border-radius: 50%;
+}
+.underline {
+    background:linear-gradient(transparent 70%, #0013b9 0%);
+}
+.underline-text{
+    background:linear-gradient(transparent 70%, #7ed957 0%);
+}
+/*----------------genaral----------------*/
+.left-bg{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 400px;
+}
+.left-bg main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+    margin-left: 20%;
+    flex: 0.2;
+}
+.left-bg aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+/*----------------genaral----------------*/
+
+/*----------------infomation----------------*/
+.left-bg-info{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 1000px;
+}
+.left-bg-info main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+    margin-left: 20%;
+    flex: 0.2;
+}
+.left-bg-info aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+.left-bg-info img{
+    margin-left: 10px;
+}
+/*----------------infomation----------------*/
+
+/*----------------cv----------------*/
+.left-bg-cv{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 600px;
+}
+.left-bg-cv main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+    margin-left: 20%;
+    flex: 0.2;
+}
+.left-bg-cv aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+.left-bg-cv img{
+    margin-left: 10px;
+}
+/*----------------cv----------------*/
+
+.infomation{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+}
+
+/**/
+.main{
+    transform: translateY(100px);
+    display: block !important;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+.main article{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    margin-left: 20%;
+    flex: 0.2;
+}
+aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+/*---------------------------------boder-radius-----------------------------------*/
+.border-radius {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1100px;
+    height: 400px;
+    line-height: normal;
+    background-color: rgb(216, 216, 216);
+    border-radius: 30px;
+    color: #fff;
+}
+.border-radius main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex: 0.3;
+}
+.border-radius aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.border-radius img{
+    width: 330px;
+    margin-left: 10px;
+}
+/*---------------------------------boder-radius-----------------------------------*/
+.wrap-eltern{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 32%;
+  background-color: #fff;
+}
+
+.item:not(:nth-child(3n+3)) {
+  margin-right: 2%;
+}
+
+.item:nth-child(n+4) {
+  margin-top: 30px;
+}
+
+@media not all and (min-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:not(:nth-child(3n+3)) {
+    margin-right: 0;
+  }
+
+  .item:nth-child(n+2) {
+    margin-top: 30px;
+  }
+}
