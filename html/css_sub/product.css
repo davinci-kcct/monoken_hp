@@ -10,6 +10,11 @@
 ul {
     list-style: none;
 }
+a:hover img{
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    -ms-filter: “alpha( opacity=50 )”;
+}
 .parent{
     display: flex;
     flex-wrap: wrap;

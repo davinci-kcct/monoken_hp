@@ -1,3 +1,6 @@
+document.oncontextmenu = function(){ return false; };
+document.body.oncontextmenu = "return false;"
+
 const menu = document.querySelector(".menu");
 const navbar = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
