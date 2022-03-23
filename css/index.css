@@ -1,11 +1,35 @@
+/* ------------Apply to the whole-----------*/
 * {
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
 }
+/* -----------------------------------------*/
+
+/*-------------------------Normal Setting--------------------*/
 ul {
     list-style: none;
   }
+.main{
+    transform: translateY(60vh);
+}
+.title{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.title h1{
+    font-size: 100px;
+}
+.title p{
+    font-size: 20px;
+}
+.underline {
+    background:linear-gradient(transparent 70%, #0013b9 0%);
+}
+/*-----------------------------------------------------------*/
+
+/*------------------font------------------*/
 .font{
     font-family: 'Anton', sans-serif;
 }
@@ -18,18 +42,9 @@ ul {
 .font-title-jap{
     font-family: 'Merriweather', serif;
 }
-.main{
-    transform: translateY(60vh);
-}
-.title{
-    position: relative;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-.underline {
-    background:linear-gradient(transparent 70%, #0013b9 0%);
-}
-/* スライダー全体 */
+/*-----------------------------------------*/
+
+/*----------------------------Setting for Slider------------------------------*/
 .slider{
     position: absolute;
     top: 64px;
@@ -40,7 +55,7 @@ ul {
     background-color: #000;
   }
   
-  /* スライダー画像 */
+  /*------image-------*/
   .slider .image{
     position: absolute;
     top: 0;
@@ -54,8 +69,8 @@ ul {
   }
   
   /*
-    ①スライド画像
-    表示する画像を定義
+    Nr.1 the images of Slider
+    Define to slider
   */
   .slider .image:nth-of-type(1){
     background-image: url(../images/slide_1.jpeg);
@@ -70,17 +85,17 @@ ul {
   }
   
   /*
-    ②アニメーション設定
-    animation-durationのみ変更
+    Nr.2 Animation-Setting
+    Change ONLY animation-duration
   */
   .slider .image{
     animation-name: anime;
     animation-delay: 0;
     animation-iteration-count: infinite;
-    animation-duration: 15s;  /* ①で設定したanimation-delayを合計を挿入 */
+    animation-duration: 15s;  /*Insert the sum of animation-delay set in Nr.1*/
   }
   
-  /* アニメーション定義 */
+  /* Define to Animation */
   @keyframes anime {
     0% {
       opacity: 0;
@@ -93,19 +108,15 @@ ul {
       transform: scale(1.18);
     }
   }
+/*---------------------------------Setting for Slider--------------------------------------*/
+
+/*----------------------------------------HEADER-------------------------------------------*/
 header{
     z-index: 1000;
 }
 .fade { max-width: 600px; margin: 0 auto 50px; padding: 0; height: auto;}
 .fade img{ width: 100%;}
 
-.pic{
-    text-align: center;
-}
-.pic img{
-    width: 80%;
-    margin-top: 80px;
-}
 nav{
     z-index: 1000;
     width: 100%;
@@ -148,7 +159,9 @@ nav.sticky ul {
     background: transparent;
     font-size: 1.1rem;
 }
+/*---------------------------------------------------------------------------------------*/
 
+/*-------------------------------------ARTICLE-----------------------------------------*/
 .icon{
     position: relative;
 	width: 320px;
@@ -213,16 +226,194 @@ nav.sticky ul {
     height: 400px;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 28%;
-    margin-right: 28%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .adver p{
     margin-bottom: 100px;
 }
-.logo{
-    width: 140px;
-    margin: 0 auto 20px auto;
+/*-------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1500px){
+    .right-bg main{ margin-left: 15%; }
+    .right-bg aside{ margin-right: 15%; }
+    .left-bg main{ margin-left: 15%; }
+    .left-bg aside{ margin-right: 15%; }
 }
-.text{
-    padding: 20px 10%;
+@media screen and (max-width: 1300px){
+    .right-bg main{ margin-left: 11%; }
+    .right-bg aside{ margin-right: 11%; }
+    .left-bg main{ margin-left: 11%; }
+    .left-bg aside{ margin-right: 11%; }
+}
+@media screen and (max-width: 1100px){
+    .right-bg main{ margin-left: 7%; }
+    .right-bg aside{ margin-right: 7%; }
+    .left-bg main{ margin-left: 7%; }
+    .left-bg aside{ margin-right: 7%; }
+}
+@media screen and (max-width: 1000px){
+    .adver{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 900px){
+    .right-bg main{ margin-right: 5%; }
+    .left-bg main{ margin-right: 5%; }
+    .icon{
+        width: 280px;
+        height: 280px;
+    }
+    .title h1{font-size: 70px;}
+
+}
+@media screen and (max-width: 800px){
+    .right-bg aside{ margin-right: 7%; }
+    .left-bg aside{ margin-right: 7%; }
+    .right-bg main{ 
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 200px;
+        height: 200px;
+    }
+    .title h1{font-size: 50px;}
+    
+}
+@media screen and (max-width: 700px){
+    .icon{
+        width: 180px;
+        height: 180px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .title h1{font-size: 40px;}
+    .title p{font-size: 15px;}
+
+}
+@media screen and (max-width: 600px){
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+    }
+    .right-bg main p{
+        font-size: 13px;
+    }
+    .left-bg aside p{
+        font-size: 13px;
+    }
+    .adver p{
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 530px){
+    .right-bg{
+        height: 300px;
+    }
+    .left-bg{
+        height: 300px;
+    }
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 130px;
+        height: 130px;
+    }
+    .right-bg main p{
+        font-size: 9px;
+    }
+    .left-bg aside p{
+        font-size: 9px;
+    }
+    .adver p{
+        font-size: 9px;
+    }
+    nav ul li{margin: 15px 15px;}
+    .slider {
+        height: 40vh;
+        top:55px;
+    }
+    .contents{
+        transform: translateY(-121px);
+    }
+
+}
+@media screen and (max-width: 450px){
+    .right-bg{
+        height: 275px;
+    }
+    .left-bg{
+        height: 275px;
+    }
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .right-bg aside{
+        display: none!important;
+    }
+    .left-bg main{
+        display: none!important;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg aside{
+        margin-left: 7%;
+    }
+    .icon{
+        width: 100px;
+        height: 110px;
+    }
+    .right-bg main p{
+        font-size: 4px;
+    }
+    .left-bg aside p{
+        font-size: 4px;
+    }
+    .adver p{
+        font-size: 4px;
+    }
+    .title h1{font-size: 35px;}
+    .title p{font-size: 10px;}
+    .slider {
+        height: 25vh;
+        top:55px;
+    }
+    .contents{
+        transform: translateY(-241px);
+    }
+    .adver p{
+        margin-bottom: 300px;
+    }
+}
+@media screen and (max-width: 350px){
+    nav ul li{margin: 15px 8px;}
+}
+@media screen and (max-width: 280px){
+    nav ul li{margin: 15px 4px;}
 }
