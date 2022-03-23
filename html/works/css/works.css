@@ -76,7 +76,10 @@ nav.sticky .logo {
 
 nav.sticky ul {
     background: transparent;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+}
+.navbar{
+    font-size: 1.7rem;
 }
 /*----------------------------------------------------------------------*/
 .text{
@@ -88,11 +91,11 @@ nav.sticky ul {
     margin-top: 40px;
     margin-bottom: 100px;
     margin-right: 40px;
-    margin-left: 20%;
+    margin-left: 200px;
     flex: 0.8;
 }
 .text aside{
     margin-top: 40px;
     margin-bottom: 100px;
-    margin-right: 20%;
+    margin-right: 200px;
 }
