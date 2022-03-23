@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
 .font{
     font-family: 'Anton', sans-serif;
 }
@@ -12,11 +17,6 @@
 }
 .underline-green{
     background:linear-gradient(transparent 70%, #7ed957 0%);
-}
-img{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
 }
 .main{
     transform: translateY(100px);
@@ -106,5 +106,10 @@ img{
     margin-right: 15%;
 }
 .article img{
+    width: 400px;
+    margin-top: 20px;
     margin-left: 10px;
+}
+@media screen and (max-width: 1200px){
+    .article img{width: 350px;}
 }

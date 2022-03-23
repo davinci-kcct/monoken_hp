@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
 ul {
     list-style: none;
 }
@@ -82,20 +87,27 @@ nav.sticky ul {
     font-size: 1.7rem;
 }
 /*----------------------------------------------------------------------*/
-.text{
+.face{
     display: flex;
     background-color: white;
     width: 100vw;
 }
-.text main{
+.face main{
     margin-top: 40px;
     margin-bottom: 100px;
     margin-right: 40px;
     margin-left: 200px;
-    flex: 0.8;
+    flex: 0.7;
 }
-.text aside{
+.face aside{
     margin-top: 40px;
     margin-bottom: 100px;
     margin-right: 200px;
+}
+.face aside li{
+    font-size: 23px;
+}
+.discript{
+    margin-right: 200px;
+    margin-left: 200px;
 }

@@ -7,6 +7,11 @@
 /* -----------------------------------------*/
 
 /*-------------------------Normal Setting--------------------*/
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
 ul {
     list-style: none;
 }
@@ -25,7 +30,7 @@ ul {
     font-size: 20px;
 }
 .underline {
-    background:linear-gradient(transparent 70%, #0013b9 0%);
+    background: linear-gradient(transparent 70%, #0013b9 0%);
 }
 /*-----------------------------------------------------------*/
 

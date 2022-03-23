@@ -7,6 +7,11 @@
 /*-----------------------------------------------------------*/
 
 /*---------------------Normal Setting------------------------*/
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
 ul {
     list-style: none;
 }
