@@ -47,7 +47,7 @@ ul {
 /*----------------------------Setting for Slider------------------------------*/
 .slider{
     position: absolute;
-    top: 64px;
+    top: 88px;
     left: 0;
     overflow: hidden;
     width: 100%;
@@ -158,6 +158,9 @@ nav.sticky .logo {
 nav.sticky ul {
     background: transparent;
     font-size: 1.4rem;
+}
+.navbar{
+    font-size: 2.0rem;
 }
 /*---------------------------------------------------------------------------------------*/
 
