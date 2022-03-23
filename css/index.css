@@ -315,13 +315,13 @@ nav.sticky ul {
         height: 150px;
     }
     .right-bg main p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .left-bg aside p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .adver p{
-        font-size: 13px;
+        font-size: 15px;
     }
 
 }
@@ -345,13 +345,13 @@ nav.sticky ul {
         height: 130px;
     }
     .right-bg main p{
-        font-size: 9px;
+        font-size: 15px;
     }
     .left-bg aside p{
-        font-size: 9px;
+        font-size: 15px;
     }
     .adver p{
-        font-size: 9px;
+        font-size: 15px;
     }
     nav ul li{margin: 15px 15px;}
     .slider {
@@ -390,13 +390,13 @@ nav.sticky ul {
         height: 110px;
     }
     .right-bg main p{
-        font-size: 4px;
+        font-size: 15px;
     }
     .left-bg aside p{
-        font-size: 4px;
+        font-size: 15px;
     }
     .adver p{
-        font-size: 4px;
+        font-size: 15px;
     }
     .title h1{font-size: 35px;}
     .title p{font-size: 10px;}
