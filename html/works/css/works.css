@@ -4,10 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul {
+    list-style: none;
+  }
 img{
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100%;
+}
+.font{
+    font-family: 'Anton', sans-serif;
+}
+.font-jap{
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .main{
     transform: translateY(100px);
@@ -21,11 +30,8 @@ img{
 .underline {
     background:linear-gradient(transparent 70%, #0013b9 0%);
 }
-.font{
-    font-family: 'Anton', sans-serif;
-}
-.font-title{
-    font-family: 'Merriweather', serif;
+.underline-text{
+    background:linear-gradient(transparent 70%, #7ed957 0%);
 }
 header{
     z-index: 1000;
@@ -73,9 +79,20 @@ nav.sticky ul {
     font-size: 1.1rem;
 }
 /*----------------------------------------------------------------------*/
-
 .text{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 10%;
+    display: flex;
+    background-color: white;
+    width: 100vw;
+}
+.text main{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+    margin-left: 20%;
+    flex: 0.8;
+}
+.text aside{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 20%;
 }

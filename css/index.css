@@ -12,6 +12,12 @@ ul {
 .font-jap{
     font-family: 'Noto Sans JP', sans-serif;
 }
+.font-title{
+    font-family: 'Dela Gothic One', cursive;
+}
+.font-title-jap{
+    font-family: 'Merriweather', serif;
+}
 .main{
     transform: translateY(60vh);
 }
@@ -87,13 +93,6 @@ ul {
       transform: scale(1.18);
     }
   }
-
-.font{
-    font-family: 'Anton', sans-serif;
-}
-.font-title{
-    font-family: 'Merriweather', serif;
-}
 header{
     z-index: 1000;
 }
