@@ -1,0 +1,425 @@
+/* ------------Apply to the whole-----------*/
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -----------------------------------------*/
+
+/*-------------------------Normal Setting--------------------*/
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+ul {
+    list-style: none;
+}
+.main{
+    transform: translateY(550px);
+}
+.title{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.title h1{
+    font-size: 100px;
+}
+.title p{
+    font-size: 20px;
+}
+.underline {
+    background: linear-gradient(transparent 70%, #0013b9 0%);
+}
+/*-----------------------------------------------------------*/
+
+/*------------------font------------------*/
+.font{
+    font-family: 'Anton', sans-serif;
+}
+.font-jap{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.font-title{
+    font-family: 'Dela Gothic One', cursive;
+}
+.font-title-jap{
+    font-family: 'Merriweather', serif;
+}
+/*-----------------------------------------*/
+
+/*----------------------------Setting for Slider------------------------------*/
+.slider{
+    position: absolute;
+    top: 66px;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+  }
+  
+  /*------image-------*/
+  .slider .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /*
+    Nr.1 the images of Slider
+    Define to slider
+  */
+  .slider .image:nth-of-type(1){
+    background-image: url(../images/slide_1.jpeg);
+  }
+  .slider .image:nth-of-type(2){
+    animation-delay: 5s;
+    background-image: url(../images/slide_2.jpeg);
+  }
+  .slider .image:nth-of-type(3){
+    animation-delay: 10s;
+    background-image: url(../images/slide_3.jpeg);
+  }
+  
+  /*
+    Nr.2 Animation-Setting
+    Change ONLY animation-duration
+  */
+  .slider .image{
+    animation-name: anime;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;  /*Insert the sum of animation-delay set in Nr.1*/
+  }
+  
+  /* Define to Animation */
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.18);
+    }
+  }
+/*---------------------------------Setting for Slider--------------------------------------*/
+
+/*----------------------------------------HEADER-------------------------------------------*/
+header{
+    z-index: 1000;
+}
+.fade { max-width: 600px; margin: 0 auto 50px; padding: 0; height: auto;}
+.fade img{ width: 100%;}
+
+nav{
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+nav ul{
+    background-color: #000;
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 3%;
+    max-height: 15%;
+    transition: all 1.4s;
+}
+
+nav.sticky .logo {
+    margin: 20px 0;
+}
+
+nav.sticky ul {
+    background: transparent;
+    font-size: 1.1rem;
+}
+.navbar{
+    font-size: 1.1rem;
+}
+/*refalence URL: https://www.youtube.com/watch?v=jknVXr_uMoQ*/
+/*---------------------------------------------------------------------------------------*/
+
+/*-------------------------------------ARTICLE-----------------------------------------*/
+.icon{
+    position: relative;
+	width: 320px;
+	height: 320px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.icon img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.icon:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+.right-bg{
+    display: flex;
+    background-color: #004aad;
+    width: 100vw;
+    height: 400px;
+}
+.right-bg main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    margin-left: 20%;
+    flex: 0.8;
+}
+.right-bg aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+.left-bg{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 400px;
+}
+.left-bg main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    margin-left: 20%;
+    flex: 0.2;
+}
+.left-bg aside{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20%;
+}
+.adver{
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.adver p{
+    margin-bottom: 100px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1500px){
+    .right-bg main{ margin-left: 15%; }
+    .right-bg aside{ margin-right: 15%; }
+    .left-bg main{ margin-left: 15%; }
+    .left-bg aside{ margin-right: 15%; }
+}
+@media screen and (max-width: 1300px){
+    .right-bg main{ margin-left: 11%; }
+    .right-bg aside{ margin-right: 11%; }
+    .left-bg main{ margin-left: 11%; }
+    .left-bg aside{ margin-right: 11%; }
+}
+@media screen and (max-width: 1100px){
+    .right-bg main{ margin-left: 7%; }
+    .right-bg aside{ margin-right: 7%; }
+    .left-bg main{ margin-left: 7%; }
+    .left-bg aside{ margin-right: 7%; }
+}
+@media screen and (max-width: 1000px){
+    .adver{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 900px){
+    .right-bg main{ margin-right: 5%; }
+    .left-bg main{ margin-right: 5%; }
+    .icon{
+        width: 280px;
+        height: 280px;
+    }
+    .title h1{font-size: 70px;}
+
+}
+@media screen and (max-width: 800px){
+    .right-bg aside{ margin-right: 7%; }
+    .left-bg aside{ margin-right: 7%; }
+    .right-bg main{ 
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 200px;
+        height: 200px;
+    }
+    .title h1{font-size: 50px;}
+    
+}
+@media screen and (max-width: 700px){
+    .icon{
+        width: 180px;
+        height: 180px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .title h1{font-size: 40px;}
+    .title p{font-size: 15px;}
+
+}
+@media screen and (max-width: 600px){
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .adver p{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 530px){
+    .right-bg{
+        height: 300px;
+    }
+    .left-bg{
+        height: 300px;
+    }
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 130px;
+        height: 130px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .adver p{
+        font-size: 15px;
+    }
+    nav ul li{margin: 15px 15px;}
+    .slider {
+        height: 40vh;
+        top:55px;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .right-bg{
+        height: 275px;
+    }
+    .left-bg{
+        height: 275px;
+    }
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .right-bg aside{
+        display: none!important;
+    }
+    .left-bg main{
+        display: none!important;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg aside{
+        margin-left: 7%;
+    }
+    .icon{
+        width: 100px;
+        height: 110px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .adver p{
+        font-size: 15px;
+    }
+    .title h1{font-size: 35px;}
+    .title p{font-size: 10px;}
+    .slider {
+        height: 25vh;
+        top:55px;
+    }
+    .contents{
+        transform: translateY(-241px);
+    }
+    .adver p{
+        margin-bottom: 300px;
+    }
+}
+@media screen and (max-width: 350px){
+    nav ul li{margin: 15px 8px;}
+}
+@media screen and (max-width: 280px){
+    nav ul li{margin: 15px 4px;}
+}
