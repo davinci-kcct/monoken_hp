@@ -52,7 +52,7 @@ ul {
 /*----------------------------Setting for Slider------------------------------*/
 .slider{
     position: absolute;
-    top: 80.8px;
+    top: 66px;
     left: 0;
     overflow: hidden;
     width: 100%;
@@ -162,11 +162,12 @@ nav.sticky .logo {
 
 nav.sticky ul {
     background: transparent;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 .navbar{
-    font-size: 1.7rem;
+    font-size: 1.1rem;
 }
+/*refalence URL: https://www.youtube.com/watch?v=jknVXr_uMoQ*/
 /*---------------------------------------------------------------------------------------*/
 
 /*-------------------------------------ARTICLE-----------------------------------------*/
