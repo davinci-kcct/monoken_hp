@@ -32,6 +32,9 @@ ul {
 .underline {
     background: linear-gradient(transparent 70%, #0013b9 0%);
 }
+.underline-text{
+    background:linear-gradient(transparent 70%, #7ed957 0%);
+}
 /*-----------------------------------------------------------*/
 
 /*------------------font------------------*/
