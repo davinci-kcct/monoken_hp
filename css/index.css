@@ -243,6 +243,22 @@ nav.sticky ul {
 }
 /*-------------------------------------------------------------------------------------*/
 
+/*--------------------------------------Footer-----------------------------------------*/
+footer {
+    position: fixed;
+    font-size: 0.1em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.footer{
+    font-size: 0.3rem;
+    width: 100%;
+    background: #ffffff;
+}
+/*-------------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 1500px){
     .right-bg main{ margin-left: 15%; }
     .right-bg aside{ margin-right: 15%; }
