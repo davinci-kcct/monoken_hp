@@ -81,7 +81,7 @@ ul {
     Define to slider
   */
   .slider .image:nth-of-type(1){
-    background-image: url(../images/resercher_storyset.png);
+    background-image: url(../images/monoken_products/S__28876821.jpg);
   }
   .slider .image:nth-of-type(2){
     animation-delay: 5s;
@@ -89,7 +89,7 @@ ul {
   }
   .slider .image:nth-of-type(3){
     animation-delay: 10s;
-    background-image: url(../images/study_storyset.png);
+    background-image: url(../images/monoken_products/anbrera.png);
   }
   
   /*

@@ -27,6 +27,11 @@ a:hover img{
     margin-left: auto;
     margin-right: auto;
 }
+.parent p{
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .parent img{
     margin-left: 10px;
     margin-bottom: 10px;
