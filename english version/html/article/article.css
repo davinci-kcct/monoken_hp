@@ -30,6 +30,9 @@ body {
 .underline {
     background:linear-gradient(transparent 70%, #0013b9 0%);
 }
+.underline-text{
+    background:linear-gradient(transparent 70%, #7ed957 0%);
+}
 .font{
     font-family: 'Anton', sans-serif;
 }
@@ -79,12 +82,41 @@ nav.sticky .logo {
 
 nav.sticky ul {
     background: transparent;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 .navbar{
-    font-size: 1.7rem;
+    font-size: 1.1rem;
 }
 /*----------------------------------------------------------------------*/
+/*--------------------------------------Footer-----------------------------------------*/
+footer {
+    position: fixed;
+    font-size: 0.1em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.footer{
+    font-size: 0.3rem;
+    width: 100%;
+    background: #ffffff;
+}
+/*-------------------------------------------------------------------------------------*/
+/*------------------font------------------*/
+.font{
+    font-family: 'Anton', sans-serif;
+}
+.font-jap{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.font-title{
+    font-family: 'Dela Gothic One', cursive;
+}
+.font-title-jap{
+    font-family: 'Merriweather', serif;
+}
+/*-----------------------------------------*/
 img{
     width: 400px;
 }

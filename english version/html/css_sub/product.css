@@ -27,6 +27,11 @@ a:hover img{
     margin-left: auto;
     margin-right: auto;
 }
+.parent p{
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .parent img{
     margin-left: 10px;
     margin-bottom: 10px;
@@ -185,6 +190,22 @@ aside{
     margin-right: 20%;
 }
 /*---------------------------------------------------------------------------------*/
+
+/*--------------------------------------Footer-----------------------------------------*/
+footer {
+    position: fixed;
+    font-size: 0.1em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.footer{
+    font-size: 0.3rem;
+    width: 100%;
+    background: #ffffff;
+}
+/*-------------------------------------------------------------------------------------*/
 
 /*---------------------------------boder-radius-----------------------------------*/
 .border-radius {

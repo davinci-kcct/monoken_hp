@@ -32,6 +32,9 @@ ul {
 .underline {
     background: linear-gradient(transparent 70%, #0013b9 0%);
 }
+.underline-text{
+    background:linear-gradient(transparent 70%, #7ed957 0%);
+}
 /*-----------------------------------------------------------*/
 
 /*------------------font------------------*/
@@ -78,15 +81,15 @@ ul {
     Define to slider
   */
   .slider .image:nth-of-type(1){
-    background-image: url(../images/slide_1.jpeg);
+    background-image: url(../images/landscape/summer.jpg);
   }
   .slider .image:nth-of-type(2){
     animation-delay: 5s;
-    background-image: url(../images/slide_2.jpeg);
+    background-image: url(../images/monoken_products/product\ \(36\).jpg); /*Ref-URLPhoto by Pavel Danilyuk: https://www.pexels.com/photo/close-up-shot-of-white-toy-robot-8294657/*/
   }
   .slider .image:nth-of-type(3){
     animation-delay: 10s;
-    background-image: url(../images/slide_3.jpeg);
+    background-image: url(../images/monoken_products/product\ \(1\).png);
   }
   
   /*
@@ -240,6 +243,22 @@ nav.sticky ul {
 }
 .adver p{
     margin-bottom: 100px;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*--------------------------------------Footer-----------------------------------------*/
+footer {
+    position: fixed;
+    font-size: 0.1em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.footer{
+    font-size: 0.3rem;
+    width: 100%;
+    background: #ffffff;
 }
 /*-------------------------------------------------------------------------------------*/
 
