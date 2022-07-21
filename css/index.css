@@ -81,15 +81,15 @@ ul {
     Define to slider
   */
   .slider .image:nth-of-type(1){
-    background-image: url(../images/monoken_products/S__28876821.jpg);
+    background-image: url(../images/landscape/summer.jpg);
   }
   .slider .image:nth-of-type(2){
     animation-delay: 5s;
-    background-image: url(../images/monoken_products/products\(32\).jpg); /*Ref-URLPhoto by Pavel Danilyuk: https://www.pexels.com/photo/close-up-shot-of-white-toy-robot-8294657/*/
+    background-image: url(../images/monoken_products/product\ \(36\).jpg); /*Ref-URLPhoto by Pavel Danilyuk: https://www.pexels.com/photo/close-up-shot-of-white-toy-robot-8294657/*/
   }
   .slider .image:nth-of-type(3){
     animation-delay: 10s;
-    background-image: url(../images/monoken_products/anbrera.png);
+    background-image: url(../images/monoken_products/product\ \(1\).png);
   }
   
   /*
