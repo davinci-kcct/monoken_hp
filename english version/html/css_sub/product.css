@@ -317,7 +317,7 @@ footer {
     display: flex;
     background-color: white;
     width: 100vw;
-    height: 400px;
+    height: 500px;
 }
 .left-bg main{
     margin-top: auto;
@@ -329,7 +329,7 @@ footer {
 .left-bg aside{
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 20%;
+    margin-right: 15%;
 }
 /*----------------genaral----------------*/
 
@@ -338,7 +338,7 @@ footer {
     display: flex;
     background-color: white;
     width: 100vw;
-    height: 1000px;
+    height: 750px;
 }
 .left-bg-info main{
     margin-top: auto;

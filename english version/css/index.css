@@ -211,10 +211,13 @@ nav.sticky ul {
     margin-left: 20%;
     flex: 0.8;
 }
+.right-bg main a{
+    color: white;
+}
 .right-bg aside{
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 .left-bg{
     display: flex;
